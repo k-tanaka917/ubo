@@ -1,5 +1,5 @@
 ! Title: my-static-filters
-! Version: 20240517
+! Version: 20240911
 
 ! Youtubeの埋め込み動画をクリックして読み込み
 ||youtube.com^$3p,frame,redirect=click2load.html
@@ -1434,8 +1434,10 @@ www.youtube.com##^.ytd-banner-promo-renderer
 ||www.gstatic.com/youtube/img/promos^$image,3p
 
 ! https://x.com
+x.com#$#div[data-testid^=cellInnerDiv] .r-1bnu78o { background-color: rgb(14, 126, 201) !important; }
 x.com#$#span:contains(@ツイートされている会話を管理する):upward(div[data-testid^=cellInnerDiv]) { display: none !important; height: 0px !important; }
 x.com#$#span:contains(さんがリポスト):upward(div[data-testid^=cellInnerDiv]) { display: none !important; }
+x.com#$#span:contains(プレミアムを入手) { display: none !important; }
 x.com#$#span:contains(プロモーション):not(:contains(トレンド)):upward(div[data-testid^=cellInnerDiv]) { display: none !important; height: 0px !important; }
 x.com#$#span:contains(東京自殺防止センター @tokyo9090 に悩みを聞かせてください):upward(div[data-testid^=cellInnerDiv]) { display: none !important; height: 0px !important; }
 ||abs.twimg.com/responsive-web/client-web/illustration_unmention_$image,3p
