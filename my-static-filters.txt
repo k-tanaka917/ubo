@@ -1,5 +1,5 @@
 ! Title: my-static-filters
-! Version: 20241008
+! Version: 20241009
 
 ! Youtubeの埋め込み動画をクリックして読み込み
 ||youtube.com^$3p,frame,redirect=click2load.html
@@ -1435,7 +1435,6 @@ www.youtube.com##^.ytd-banner-promo-renderer
 
 ! https://x.com
 x.com#$#div[data-testid^=cellInnerDiv] .r-1bnu78o { background-color: rgb(14, 126, 201) !important; }
-x.com#$#div[role^=tablist] > div[role^=presentation]:first-child { display: none !important; }
 x.com#$#span:contains(@ツイートされている会話を管理する):upward(div[data-testid^=cellInnerDiv]) { display: none !important; height: 0px !important; }
 x.com#$#span:contains(さんがリポスト):upward(div[data-testid^=cellInnerDiv]) { display: none !important; }
 x.com#$#span:contains(プレミアムを入手) { display: none !important; }
