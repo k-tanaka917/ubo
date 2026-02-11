@@ -1,5 +1,5 @@
 ! Title: my-static-filters
-! Version: 20241009
+! Version: 20260211
 
 ! Youtubeの埋め込み動画をクリックして読み込み
 ||youtube.com^$3p,frame,redirect=click2load.html
@@ -1430,8 +1430,8 @@ www.yomiuri.co.jp##.p-ad-dfp-banner
 ||www.yomiuri.co.jp/media/*_yoltopbottom$image,1p
 
 ! https://www.youtube.com
-www.youtube.com##^.ytd-banner-promo-renderer
-||www.gstatic.com/youtube/img/promos^$image,3p
+!www.youtube.com##^.ytd-banner-promo-renderer
+!||www.gstatic.com/youtube/img/promos^$image,3p
 
 ! https://x.com
 x.com#$#div[data-testid^=cellInnerDiv] .r-1bnu78o { background-color: rgb(14, 126, 201) !important; }
